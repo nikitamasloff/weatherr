@@ -13,6 +13,20 @@ object Libs {
 
         val appCompat = "androidx.appcompat:appcompat:1.1.0-alpha04"
     }
+
+    object Coroutines {
+        private val version = "1.2.1"
+        val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
+        val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
+    }
+
+    object Koin {
+        private val version = "2.0.0-GA"
+        val core = "org.koin:koin-core:$version"
+        val android = "org.koin:koin-android:$version"
+        val androidScope = "org.koin:koin-androidx-scope:$version"
+        val androidViewModel = "org.koin:koin-androidx-viewmodel:$version"
+    }
 }
 
 object Plugins {

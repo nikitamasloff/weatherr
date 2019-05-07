@@ -2,3 +2,5 @@ import com.nikitamaslov.weatherr.gradle.Modules
 
 include(Modules.app)
 include(Modules.datetime)
+
+include(Modules.domain)
