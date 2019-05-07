@@ -1,0 +1,27 @@
+import com.nikitamaslov.weatherr.gradle.Application
+import com.nikitamaslov.weatherr.gradle.Libs
+import com.nikitamaslov.weatherr.gradle.Plugins
+
+apply plugin: Plugins.androidLibrary
+apply plugin: Plugins.kotlinAndroid
+apply plugin: Plugins.kotlinAndroidExtensions
+apply plugin: Plugins.kotlinKapt
+
+android {
+    compileSdkVersion Application.compileSdkVersion
+    defaultConfig {
+        minSdkVersion Application.minSdkVersion
+        targetSdkVersion Application.targetSdkVersion
+        versionCode Application.versionCode
+        versionName Application.versionName
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation Libs.kotlin
+}

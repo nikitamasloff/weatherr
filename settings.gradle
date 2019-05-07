@@ -1,0 +1,3 @@
+import com.nikitamaslov.weatherr.gradle.Modules
+
+include(Modules.app)

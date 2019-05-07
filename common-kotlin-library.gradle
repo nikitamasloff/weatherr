@@ -1,0 +1,9 @@
+import com.nikitamaslov.weatherr.gradle.Libs
+import com.nikitamaslov.weatherr.gradle.Plugins
+
+apply plugin: Plugins.kotlin
+apply plugin: Plugins.kotlinKapt
+
+dependencies {
+    implementation Libs.kotlin
+}
