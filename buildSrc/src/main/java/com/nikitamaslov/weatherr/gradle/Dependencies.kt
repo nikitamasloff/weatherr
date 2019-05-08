@@ -27,6 +27,14 @@ object Libs {
         val androidScope = "org.koin:koin-androidx-scope:$version"
         val androidViewModel = "org.koin:koin-androidx-viewmodel:$version"
     }
+
+    object Retrofit {
+        private val version = "2.5.0"
+        val core = "com.squareup.retrofit2:retrofit:$version"
+        val moshiConverterFactory = "com.squareup.retrofit2:converter-moshi:$version"
+        val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:3.13.1"
+        val coroutinesAdapter = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+    }
 }
 
 object Plugins {

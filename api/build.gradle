@@ -1,0 +1,7 @@
+import com.nikitamaslov.weatherr.gradle.Modules
+
+apply from: "$rootDir/common-kotlin-library.gradle"
+
+dependencies {
+    implementation project(Modules.data)
+}
