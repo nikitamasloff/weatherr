@@ -7,4 +7,5 @@ object Modules {
     val domain = ":domain"
     val data = ":data"
     val api = ":api"
+    val storage = ":storage"
 }

@@ -1,0 +1,14 @@
+import com.nikitamaslov.weatherr.gradle.Libs
+import com.nikitamaslov.weatherr.gradle.Modules
+import com.nikitamaslov.weatherr.gradle.Plugins
+
+apply from: "$rootDir/common-android-library.gradle"
+
+apply plugin: Plugins.realmAndroid
+
+dependencies {
+    implementation project(Modules.data)
+
+    implementation Libs.Koin.core
+    implementation Libs.Coroutines.core
+}

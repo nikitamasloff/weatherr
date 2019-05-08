@@ -49,4 +49,7 @@ object Plugins {
 
     val androidGradle = "com.android.tools.build:gradle:3.4.0"
     val kotlinGradle = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+
+    val realmGradle = "io.realm:realm-gradle-plugin:5.10.0"
+    val realmAndroid = "realm-android"
 }
