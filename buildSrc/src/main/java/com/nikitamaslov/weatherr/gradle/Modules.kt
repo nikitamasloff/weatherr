@@ -5,4 +5,5 @@ object Modules {
     val datetime = ":datetime"
 
     val domain = ":domain"
+    val data = ":data"
 }

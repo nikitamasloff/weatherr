@@ -4,3 +4,4 @@ include(Modules.app)
 include(Modules.datetime)
 
 include(Modules.domain)
+include(Modules.data)
