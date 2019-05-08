@@ -1,0 +1,17 @@
+import com.nikitamaslov.weatherr.gradle.Libs
+import com.nikitamaslov.weatherr.gradle.Modules
+
+apply from: "$rootDir/common-kotlin-library.gradle"
+
+dependencies {
+    implementation project(Modules.data)
+    implementation project(Modules.datetime)
+
+    implementation Libs.Coroutines.core
+    implementation Libs.Koin.core
+
+    implementation Libs.Retrofit.core
+    implementation Libs.Retrofit.moshiConverterFactory
+    implementation Libs.Retrofit.okHttpLoggingInterceptor
+    implementation Libs.Retrofit.coroutinesAdapter
+}
