@@ -8,6 +8,7 @@ dependencies {
     implementation project(Modules.datetime)
 
     implementation Libs.Coroutines.core
+    implementation Libs.Koin.core
 
     implementation Libs.Retrofit.core
     implementation Libs.Retrofit.moshiConverterFactory
