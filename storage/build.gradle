@@ -9,5 +9,6 @@ apply plugin: Plugins.realmAndroid
 dependencies {
     implementation project(Modules.data)
 
+    implementation Libs.Koin.core
     implementation Libs.Coroutines.core
 }
