@@ -21,7 +21,7 @@ object Libs {
     }
 
     object Koin {
-        private val version = "2.0.0-GA"
+        private val version = "2.0.0-GA6"
         val core = "org.koin:koin-core:$version"
         val android = "org.koin:koin-android:$version"
         val androidScope = "org.koin:koin-androidx-scope:$version"

@@ -7,4 +7,5 @@ dependencies {
     implementation project(Modules.datetime)
 
     api Libs.Coroutines.core
+    implementation Libs.Koin.core
 }
