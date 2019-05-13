@@ -14,6 +14,18 @@ object Libs {
         val appCompat = "androidx.appcompat:appcompat:1.1.0-alpha04"
     }
 
+    object Lifecycle {
+        private const val version = "2.1.0-alpha04"
+        val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
+        val commonJava8 = "androidx.lifecycle:lifecycle-common-java8:$version"
+    }
+
+    object Navigation {
+        private const val version = "2.1.0-alpha02"
+        val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
+        val ui = "androidx.navigation:navigation-ui-ktx:$version"
+    }
+
     object Coroutines {
         private val version = "1.2.1"
         val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
@@ -52,4 +64,8 @@ object Plugins {
 
     val realmGradle = "io.realm:realm-gradle-plugin:5.10.0"
     val realmAndroid = "realm-android"
+
+    val navigationSafeArgsGradle =
+        "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha02"
+    val navigationSafeArgs = "androidx.navigation.safeargs.kotlin"
 }

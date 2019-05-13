@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graph_location"
+    app:startDestination="@id/fragment_location">
+
+    <fragment
+        android:id="@+id/fragment_location"
+        android:name="com.nikitamaslov.ui.location.LocationFragment" />
+</navigation>
