@@ -1,1 +1,14 @@
+import com.nikitamaslov.weatherr.gradle.Libs
+import com.nikitamaslov.weatherr.gradle.Plugins
+
 apply from: "$rootDir/common-android-library.gradle"
+
+apply plugin: Plugins.navigationSafeArgs
+
+dependencies {
+    api Libs.Navigation.fragment
+    api Libs.Navigation.ui
+
+    api Libs.Lifecycle.extensions
+    api Libs.Lifecycle.commonJava8
+}

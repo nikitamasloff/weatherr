@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/graph_splash"
+    app:startDestination="@id/fragment_splash">
+
+    <fragment
+        android:id="@+id/fragment_splash"
+        android:name="com.nikitamaslov.ui.splash.SplashFragment">
+
+        <action
+            android:id="@+id/to_forecast"
+            app:destination="@id/graph_forecast"
+            app:popUpTo="@+id/graph_splash"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <include app:graph="@navigation/graph_forecast" />
+</navigation>
