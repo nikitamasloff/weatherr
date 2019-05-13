@@ -9,4 +9,5 @@ object Modules {
     val data = ":data"
     val api = ":api"
     val storage = ":storage"
+    val presentation = ":presentation"
 }
