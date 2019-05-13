@@ -7,6 +7,11 @@ dependencies {
     implementation project(Modules.domain)
     api project(Modules.navigation)
 
+    implementation Libs.Koin.core
+    implementation Libs.Koin.android
+    implementation Libs.Koin.androidScope
+    implementation Libs.Koin.androidViewModel
+
     api Libs.Lifecycle.extensions
     api Libs.Lifecycle.commonJava8
 }
