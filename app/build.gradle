@@ -1,5 +1,6 @@
 import com.nikitamaslov.weatherr.gradle.Application
 import com.nikitamaslov.weatherr.gradle.Libs
+import com.nikitamaslov.weatherr.gradle.Modules
 import com.nikitamaslov.weatherr.gradle.Plugins
 
 apply plugin: Plugins.androidApplication
@@ -29,6 +30,16 @@ android {
 }
 
 dependencies {
+    implementation project(Modules.api)
+    implementation project(Modules.data)
+    implementation project(Modules.delegated)
+    implementation project(Modules.domain)
+    implementation project(Modules.navigation)
+    implementation project(Modules.presentation)
+    implementation project(Modules.storage)
+    implementation project(Modules.ui)
+
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation Libs.kotlin
     implementation Libs.Android.appCompat
