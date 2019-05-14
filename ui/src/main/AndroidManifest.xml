@@ -4,6 +4,9 @@
 
     <application>
         <activity
+            android:name=".location.LocationActivity"
+            android:theme="@style/LocationActivity" />
+        <activity
             android:name=".forecast.ForecastActivity"
             android:theme="@style/ForecastActivity" />
         <activity

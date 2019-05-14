@@ -1,9 +1,6 @@
 package com.nikitamaslov.ui.mapper
 
-import com.nikitamaslov.presentation.model.DateTimeFigure
-import com.nikitamaslov.presentation.model.NotificationFigure
-import com.nikitamaslov.presentation.model.TemperatureFigure
-import com.nikitamaslov.presentation.model.WeatherFigure
+import com.nikitamaslov.presentation.model.*
 import com.nikitamaslov.ui.model.*
 
 internal fun TemperatureFigure.Unit.mapToTemperatureUnitForm(): TemperatureForm.Unit =
@@ -73,3 +70,27 @@ internal fun NotificationFigure.mapToNotificationForm(): NotificationForm =
         NotificationFigure.SERVER_ERROR -> NotificationForm.SERVER_PROBLEMS
         NotificationFigure.LOCATION_NOT_SPECIFIED -> NotificationForm.LOCATION_NOT_SPECIFIED
     }
+
+internal fun LocationFigure.Descriptor.mapToLocationFormDescriptor() =
+    LocationForm.Descriptor(city, country)
+
+internal fun LocationForm.Descriptor.mapToLocationFigureDescriptor() =
+    LocationFigure.Descriptor(city, country)
+
+internal fun LocationFigure.Coordinates.mapToCoordinatesForm() =
+    LocationForm.Coordinates(latitude, longitude)
+
+internal fun LocationForm.Coordinates.mapToCoordinatesFigure() =
+    LocationFigure.Coordinates(latitude, longitude)
+
+internal fun LocationFigure.mapToLocationForm() =
+    LocationForm(
+        descriptor = descriptor.mapToLocationFormDescriptor(),
+        coordinates = coordinates.mapToCoordinatesForm()
+    )
+
+internal fun LocationForm.mapToLocationFigure() =
+    LocationFigure(
+        descriptor = descriptor.mapToLocationFigureDescriptor(),
+        coordinates = coordinates.mapToCoordinatesFigure()
+    )

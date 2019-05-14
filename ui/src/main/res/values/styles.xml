@@ -57,4 +57,13 @@
         <item name="android:background">@color/white</item>
     </style>
 
+
+    <!--LOCATION-->
+
+    <style name="LocationActivity" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="LocationRoot">
+        <item name="android:background">@color/white</item>
+    </style>
+
 </resources>
