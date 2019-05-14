@@ -9,6 +9,8 @@ dependencies {
     api Libs.Navigation.fragment
     api Libs.Navigation.ui
 
+    implementation Libs.Koin.core
+
     api Libs.Lifecycle.extensions
     api Libs.Lifecycle.commonJava8
 }
