@@ -43,4 +43,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation Libs.kotlin
     implementation Libs.Android.appCompat
+
+    implementation Libs.Koin.core
+    implementation Libs.Koin.android
 }
