@@ -3,6 +3,7 @@ import com.nikitamaslov.weatherr.gradle.Modules
 include(Modules.app)
 include(Modules.datetime)
 include(Modules.navigation)
+include(Modules.delegated)
 
 include(Modules.domain)
 include(Modules.data)

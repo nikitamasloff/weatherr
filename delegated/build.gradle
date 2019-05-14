@@ -1,0 +1,20 @@
+import com.nikitamaslov.weatherr.gradle.Libs
+import com.nikitamaslov.weatherr.gradle.Modules
+import com.nikitamaslov.weatherr.gradle.Secrets
+
+apply from: "$rootDir/common-android-library.gradle"
+
+android {
+    buildTypes {
+        libraryVariants.all { variant ->
+            variant.buildConfigField "String", "OPENWEATHERMAP_API_KEY", "\"" + Secrets.openweathermapApiKey + "\""
+        }
+    }
+}
+
+dependencies {
+    implementation project(Modules.api)
+
+    implementation Libs.Koin.core
+    implementation Libs.Koin.android
+}
