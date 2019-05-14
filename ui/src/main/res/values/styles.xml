@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--APPLICATION-->
+
+    <style name="Application" parent="Theme.AppCompat" />
+
+
+    <!--SPLASH-->
+
+    <style name="SplashActivity" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="SplashBackground">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="SplashProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/black</item>
+    </style>
+
+    <style name="SplashLogo">
+        <item name="android:background">@color/white</item>
+        <item name="android:text">@string/logo</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_extra_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--PREFERENCES-->
+
+    <style name="Application.WithPreferences" parent="Application">
+        <item name="md_corner_radius">@dimen/corner_radius_normal</item>
+        <item name="md_color_title">@color/black</item>
+        <item name="md_color_content">@color/black</item>
+        <item name="md_color_button_text">@color/black</item>
+    </style>
+
+    <style name="PreferencesActivity" parent="Theme.AppCompat.NoActionBar">
+        <item name="md_background_color">@color/white</item>
+        <item name="md_ripple_color">@color/grey_400</item>
+    </style>
+
+    <style name="PreferencesRoot">
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!--FORECAST-->
+
+    <style name="ForecastActivity" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="ForecastRoot">
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>

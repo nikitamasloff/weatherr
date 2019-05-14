@@ -1,7 +1,22 @@
+import com.nikitamaslov.weatherr.gradle.Libs
 import com.nikitamaslov.weatherr.gradle.Modules
 
 apply from: "$rootDir/common-android-library.gradle"
 
 dependencies {
     implementation project(Modules.presentation)
+
+    api Libs.Android.appCompat
+    implementation Libs.Android.constraintLayout
+
+    api Libs.Coroutines.core
+
+    implementation Libs.Koin.core
+    implementation Libs.Koin.android
+    implementation Libs.Koin.androidViewModel
+
+    implementation Libs.MaterialDialog.core
+    implementation Libs.MaterialDialog.lifecycle
+
+    implementation Libs.MaterialPreferences.core
 }

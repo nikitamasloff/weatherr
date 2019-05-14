@@ -1,2 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nikitamaslov.ui" />
+    package="com.nikitamaslov.ui">
+
+    <application>
+        <activity
+            android:name=".forecast.ForecastActivity"
+            android:theme="@style/ForecastActivity" />
+        <activity
+            android:name=".preferences.PreferencesActivity"
+            android:theme="@style/PreferencesActivity" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:theme="@style/SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -48,6 +48,16 @@ object Libs {
         val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:3.13.1"
         val coroutinesAdapter = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
     }
+
+    object MaterialDialog {
+        private val version = "3.0.0-alpha1"
+        val core = "com.afollestad.material-dialogs:core:$version"
+        val lifecycle = "com.afollestad.material-dialogs:lifecycle:$version"
+    }
+
+    object MaterialPreferences {
+        const val core = "com.yarolegovich:mp:1.0.9"
+    }
 }
 
 object Plugins {
