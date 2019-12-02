@@ -1,3 +1,3 @@
 # Weatherr
 
-## All progress is on [develop branch](nktmslv/weatherr/tree/develop)
+## All progress is on [develop branch](../../tree/develop)
